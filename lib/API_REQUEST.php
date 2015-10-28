@@ -6,7 +6,7 @@ class API_REQUEST{
 
     public function __construct($ajaxRequest)
     {
-        if (!empty(($ajaxRequest) && is_string($ajaxRequest)))
+        if (!empty($ajaxRequest) && is_string($ajaxRequest))
         {
             $this->ajaxRequestArr = json_decode($ajaxRequest, true);
         }
